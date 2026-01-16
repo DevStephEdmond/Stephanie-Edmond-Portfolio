@@ -94,8 +94,12 @@
       <section id="hero" class="hero section dark-background">
         <img
           src="assets/img/modern-workspace-hero-img.webp"
+          srcset="
+            DevFolio/assets/img/modern-workspace-hero-img-xs.webp  400w,
+            assets/img/modern-workspace-hero-img.webp             1200w
+          "
+          sizes="(max-width: 600px) 100vw, 1200px"
           alt="Modern workspace background image"
-          data-aos="fade-in"
         />
 
         <div
@@ -123,7 +127,10 @@
           </p>
           <hr class="hr-name" />
           <p class="hero-name">Hi, I&#8217;m Stephanie Edmond</p>
-          <a href="#problem" class="cta-button">Build My Website</a>
+          <div class="btn">
+            <a href="#services" class="cta-button">Build My Website</a>
+            <a href="#portfolio" class="cta-button">View My Work</a>
+          </div>
         </div>
       </section>
       <!-- /Hero Section -->
@@ -329,13 +336,6 @@
               </article>
             </div>
 
-            <!--End Service Item -->
-          </div>
-          <!-- CTA at the bottom -->
-          <a href="#contact" class="cta-button">
-            Let’s Talk About Your Website</a
-          >
-        </div>
       </section>
       <!--/Services Section -->
 
@@ -380,10 +380,24 @@
                   />
                   <div class="portfolio-info">
                     <h4>Bella Cucina Restaurant</h4>
-                    <p>
-                      Modern restaurant site with online menu, reservations, and
-                      mobile-first design.
-                    </p>
+                    <p>Modern restaurant website that builds trust.</p>
+
+                    <div class="case-study-details">
+                      <p>
+                        <strong>Context:</strong> A local restaurant needed an
+                        online presence.<br />
+                        <strong>Problem:</strong> Customers couldn&#8217;t
+                        easily find the menu or contact details.<br />
+                        <strong>Solution:</strong> I built a modern,
+                        mobile-first website with a clear menu and layout.<br />
+                        <strong>Outcome:</strong> The restaurant gained a
+                        professional site that builds trust and improves
+                        customer experience.
+                      </p>
+                    </div>
+                    <button class="toggle-details cta-button">
+                      View Case Study
+                    </button>
                     <a
                       href="assets/img/portfolio/bella-cucina-mockup.webp"
                       title="Bella Cucina"
@@ -414,10 +428,26 @@
                   />
                   <div class="portfolio-info">
                     <h4>Provenly Pro</h4>
-                    <p>
-                      Comprehensive project management tool with real-time
-                      collaboration and analytics landing page.
+                    <p class="teaser">
+                      Project management tool landing page with clear, engaging
+                      UI.
                     </p>
+                    <div class="case-study-details">
+                      <p>
+                        <strong>Context:</strong> A SaaS product launching a
+                        project management tool.<br />
+                        <strong>Problem:</strong> The product features were
+                        unclear to first-time visitors.<br />
+                        <strong>Solution:</strong> I created a focused landing
+                        page explaining the product and guiding users to sign
+                        up.<br />
+                        <strong>Outcome:</strong> Visitors can quickly
+                        understand the product and take action.
+                      </p>
+                    </div>
+                    <button class="toggle-details cta-button">
+                      View Case Study
+                    </button>
                     <a
                       href="assets/img/portfolio/provenly-mockup.webp"
                       title="Provenly Pro"
@@ -448,7 +478,25 @@
                   />
                   <div class="portfolio-info">
                     <h4>Chris Nova</h4>
-                    <p>Artist link in bio</p>
+                    <p class="teaser">
+                      Artist website with link-in-bio layout and mobile-first
+                      design.
+                    </p>
+                    <div class="case-study-details">
+                      <p>
+                        <strong>Context:</strong> An artist needed one place to
+                        share all important links.<br />
+                        <strong>Problem:</strong> Social media profiles limited
+                        how content was shared.<br />
+                        <strong>Solution:</strong> I built a clean,
+                        mobile-friendly link-in-bio website.<br />
+                        <strong>Outcome:</strong> Fans can easily access music,
+                        socials, and updates from one page.
+                      </p>
+                    </div>
+                    <button class="toggle-details cta-button">
+                      View Case Study
+                    </button>
                     <a
                       href="assets/img/portfolio/chris-nova-mockup.webp"
                       title="Chris Nova"
@@ -479,7 +527,25 @@
                   />
                   <div class="portfolio-info">
                     <h4>Heartwell Cardiology</h4>
-                    <p>Cardiology services and patient care website</p>
+                    <p class="teaser">
+                      Cardiology website for patient care, appointments, and
+                      services.
+                    </p>
+                    <div class="case-study-details">
+                      <p>
+                        <strong>Context:</strong> A cardiology practice needed a
+                        professional healthcare website.<br />
+                        <strong>Problem:</strong> Medical services were not
+                        clearly explained to patients.<br />
+                        <strong>Solution:</strong> I built a clean, trustworthy
+                        website focused on clarity and accessibility.<br />
+                        <strong>Outcome:</strong> Patients can easily understand
+                        services and feel confident in the practice.
+                      </p>
+                    </div>
+                    <button class="toggle-details cta-button">
+                      View Case Study
+                    </button>
                     <a
                       href="assets/img/portfolio/heartwell-cardiology-mockup.webp"
                       title="Heartwell Cardiology"
@@ -500,6 +566,8 @@
 
             <!-- End Portfolio Container -->
           </div>
+          <a href="#contact" class="cta-button">Start today with a free website review</a
+          >
         </div>
       </section>
       <!-- /Portfolio Section -->
@@ -510,14 +578,14 @@
         <div class="container section-title" data-aos="fade-up">
           <h2>Process That Make the Web Work for You</h2>
           <p>
-            Your business deserves more than just a pretty site. You need a
-            fast, clear website that delivers results without tech stress.
+            How I work to make your website fast, clear, and conversion-focused
           </p>
         </div>
         <!--End Section Title -->
 
         <div class="container">
           <div class="row gy-4">
+            <!-- Step 1: Discovery -->
             <div
               class="col-lg-4 col-md-6"
               data-aos="fade-up"
@@ -527,25 +595,32 @@
                 <div class="icon">
                   <i class="bi bi-layout-text-window"></i>
                 </div>
-                <a href="#" class="stretched-link">
                   <h3>Discovery</h3>
-                </a>
-                <p>We start with a conversation.</p>
-                <p>
-                  <strong>You: </strong>
-                  <span>Share your goals, User&#8217;ts needs, and ideas.</span>
+                <p class="teaser">
+                  We start with a conversation about your goals.
                 </p>
-                <p>
-                  <strong>Me: </strong>
-                  <span
-                    >Listen carefully, research your industry, and suggest the
-                    best path.</span
-                  >
-                </p>
+                <div class="case-study-details" >
+                  <p>
+                    <strong>You: </strong
+                    ><span
+                      >Share your goals, User&#8217;s needs, and ideas.</span
+                    >
+                  </p>
+                  <p>
+                    <strong>Me: </strong
+                    ><span
+                      >Listen carefully, research your industry, and suggest the
+                      best path.</span
+                    >
+                  </p>
+                </div>
+                <button type="button" class="details cta-button toggle-details">
+                  Details
+                </button>
               </div>
             </div>
-            <!--End Service Item -->
 
+            <!-- Step 2: Planning -->
             <div
               class="col-lg-4 col-md-6"
               data-aos="fade-up"
@@ -555,25 +630,26 @@
                 <div class="icon">
                   <i class="bi bi-arrow-repeat"></i>
                 </div>
-                <a href="#" class="stretched-link">
                   <h3>Planning</h3>
-                </a>
-                <p>We map out the journey.</p>
-                <p>
-                  <strong>You: </strong>
-                  <span>Approve the roadmap and give feedback.</span>
-                </p>
-                <p>
-                  <strong>Me: </strong>
-                  <span
-                    >Create a clear timeline, milestones, and content
-                    structure.</span
-                  >
-                </p>
+                <p class="teaser">We map out the journey.</p>
+                <div class="case-study-details" >
+                  <p>
+                    <strong>You: </strong
+                    ><span>Approve the roadmap and give feedback.</span>
+                  </p>
+                  <p>
+                    <strong>Me: </strong
+                    ><span
+                      >Create a clear timeline, milestones, and content
+                      structure.</span
+                    >
+                  </p>
+                </div>
+                <button class="details cta-button toggle-details">Details</button>
               </div>
             </div>
-            <!--End Service Item -->
 
+            <!-- Step 3: Development -->
             <div
               class="col-lg-4 col-md-6"
               data-aos="fade-up"
@@ -583,25 +659,26 @@
                 <div class="icon">
                   <i class="bi bi-bullseye"></i>
                 </div>
-                <a href="#" class="stretched-link">
                   <h3>Development</h3>
-                </a>
-                <p>Your vision takes shape.</p>
-                <p>
-                  <strong>You: </strong>
-                  <span>Provide content (or we refine it together).</span>
-                </p>
-                <p>
-                  <strong>Me: </strong>
-                  <span
-                    >Build a secure, responsive website tailored to your
-                    business.</span
-                  >
-                </p>
+                <p class="teaser">Your vision takes shape.</p>
+                <div class="case-study-details" >
+                  <p>
+                    <strong>You: </strong
+                    ><span>Provide content (or we refine it together).</span>
+                  </p>
+                  <p>
+                    <strong>Me: </strong
+                    ><span
+                      >Build a secure, responsive website tailored to your
+                      business.</span
+                    >
+                  </p>
+                </div>
+                <button class="details cta-button toggle-details">Details</button>
               </div>
             </div>
-            <!--End Service Item -->
 
+            <!-- Step 4: Launch -->
             <div
               class="col-lg-4 col-md-6"
               data-aos="fade-up"
@@ -611,27 +688,28 @@
                 <div class="icon">
                   <i class="bi bi-tools"></i>
                 </div>
-                <a href="#" class="stretched-link">
-                  <h3>Launch and live</h3>
-                </a>
-                <p>Your site goes live stress-free.</p>
-                <p>
-                  <strong>You: </strong>
-                  <span
-                    >Celebrate and start using your site with your users.</span
-                  >
-                </p>
-                <p>
-                  <strong>Me: </strong>
-                  <span
-                    >Test everything, launch smoothly, and provide support after
-                    go-live.</span
-                  >
-                </p>
-                <a href="#" class="stretched-link"></a>
+                  <h3>Launch and Live</h3>
+                <p class="teaser">Your site goes live stress-free.</p>
+                <div class="case-study-details" >
+                  <p>
+                    <strong>You: </strong
+                    ><span
+                      >Celebrate and start using your site with your
+                      users.</span
+                    >
+                  </p>
+                  <p>
+                    <strong>Me: </strong
+                    ><span
+                      >Test everything, launch smoothly, and provide support
+                      after go-live.</span
+                    >
+                  </p>
+                  
+                </div>
+                <button class="details cta-button toggle-details">Details</button>
               </div>
             </div>
-            <!--End Service Item -->
           </div>
         </div>
       </section>
@@ -686,10 +764,10 @@
                 </p>
 
                 <p>
-                  When I&#8217;m not coding, I&#8217;tm usually reading,
+                  When I&#8217;m not coding, I&#8217;m usually reading,
                   learning something new, dancing to music, or testing out
-                  ideas. Lately, I&#8217;tve also been practicing stepping out
-                  of my introvert bubble whether that&#8217;ts networking or
+                  ideas. Lately, I&#8217;ve also been practicing stepping out
+                  of my introvert bubble whether that&#8217;s networking or
                   just socializing more.
                 </p>
               </div>
@@ -934,7 +1012,6 @@
                   class="form-control"
                   name="subject"
                   placeholder="If you chose Others, please specify here"
-                  required=""
                 />
               </div>
 
