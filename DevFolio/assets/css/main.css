@@ -672,7 +672,7 @@ section,
   width: 100%;
   min-height: calc(100vh - 92px);
   position: relative;
-  padding: 60px 0;
+  padding: 50px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -703,30 +703,85 @@ section,
 
 .hero h2 {
   margin: 0;
-  font-size: 64px;
+  font-size: 36px;
   font-weight: 700;
+  padding-top: -20px;
+}
+
+.hr-name {
+  flex-shrink: 0; /* don’t allow flex to shrink it */
+  width: 35%; /* length of the line */
+  height: 2px; /* thickness */
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 1)
+    ),
+    rgba(255, 255, 255, 0.8); /* visible on bright background */
+  border: none; /* remove default */
+  border-radius: 1px; /* rounded edges */
+  margin: 20px auto; /* center and spacing */
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.3); /* subtle depth */
 }
 
 .hero p {
   margin: 5px 0 0 0;
-  font-size: 36px;
-  font-weight: 600;
+  font-size: 26px;
+  font-weight: 400;
 }
 
 .hero p span {
   letter-spacing: 1px;
 }
 
+.hero .hero-name {
+  margin: 20px 0 50px 0;
+  font-size: 20px;
+  font-weight: 400;
+}
+.hero .btn {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #2a7ae2;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.cta-button:hover {
+  background-color: #1a5bc4;
+  color: white;
+}
+
 @media (max-width: 768px) {
   .hero h2 {
-    font-size: 32px;
+    padding-top: -20px;
+    font-size: 24px;
   }
 
   .hero p {
     font-size: 20px;
   }
+  .hero .hero-name {
+    font-size: 18px;
+  }
   .hero img {
     height: 100vh;
+  }
+  main .section {
+    padding-top: 0;
+  }
+  .hero .btn {
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
   }
 }
 .hero h1 {
@@ -817,7 +872,7 @@ section,
 .services .service-item {
   background-color: var(--surface-color);
   box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
-  padding: 60px 30px;
+  padding: 1.85rem, 1rem;
   transition: all ease-in-out 0.3s;
   border-radius: 18px;
   border-bottom: 5px solid var(--surface-color);
@@ -909,6 +964,7 @@ section,
 .portfolio .portfolio-item {
   position: relative;
   top: 30px;
+  padding-bottom: 1rem;
 }
 
 .portfolio .portfolio-item .portfolio-info {
@@ -932,8 +988,20 @@ section,
 .portfolio .portfolio-item .portfolio-info p {
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   font-size: 14px;
-  margin-bottom: 0;
   padding-right: 50px;
+}
+
+.case-study-details {
+  display: none; /* hidden by default */
+  margin-top: 10px;
+}
+.case-study-details.active {
+  display: block;
+}
+
+.toggle-details {
+  padding: 6px 12px;
+  margin-top: 1rem;
 }
 
 .portfolio .portfolio-item .portfolio-info .preview-link,
@@ -965,7 +1033,11 @@ section,
 .bella-cucina-h-adjust {
   height: 100%;
 }
-
+.portfolio .cta-button {
+  display: flex;
+  margin: 40px auto 0 auto;
+  width: fit-content;
+}
 /*--------------------------------------------------------------
 # Faq Section
 --------------------------------------------------------------*/
@@ -1414,7 +1486,6 @@ section,
   margin-bottom: 20px;
 }
 .section-problem-intro {
-  font-size: 0.7rem;
   color: #222;
   margin-bottom: 1rem;
 }
@@ -1453,29 +1524,32 @@ section,
 }
 
 .problem-section .closing {
-  margin-top: 20px;
+  margin: 25px auto;
   font-size: 1rem;
   color: #555;
 }
 
-.problem-section .cta-button,
-.hero .cta-button {
-  display: inline-block;
-  margin-top: 30px;
-  padding: 12px 24px;
-  background-color: #2a7ae2;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
+@media (max-width: 575px) {
+  .problem-section .container {
+    margin-top: 30px;
+  }
 
-.problem-section .cta-button:hover,
-.hero .cta-button:hover {
-  background-color: #1a5bc4;
+  .section .section-problem-intro {
+    font-size: 0.9rem;
+  }
+  .problem-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .problem-section .container li,
+  .problem-section p {
+    font-size: 1.13rem;
+  }
+  .cta-button {
+    padding: 6px 12px;
+  }
 }
-
 .service-item {
   padding: 25px;
   line-height: 1.6;
@@ -1485,4 +1559,5 @@ section,
 }
 .service-item p {
   margin-bottom: 8px;
+  line-height: 1.6;
 }

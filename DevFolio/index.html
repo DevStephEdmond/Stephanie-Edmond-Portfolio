@@ -93,9 +93,13 @@
       <!-- Hero Section -->
       <section id="hero" class="hero section dark-background">
         <img
-          src="assets/img/stats-bg - Copy.jpg"
-          alt="hero background"
-          data-aos="fade-in"
+          src="assets/img/modern-workspace-hero-img.webp"
+          srcset="
+            DevFolio/assets/img/modern-workspace-hero-img-xs.webp  400w,
+            assets/img/modern-workspace-hero-img.webp             1200w
+          "
+          sizes="(max-width: 600px) 100vw, 1200px"
+          alt="Modern workspace background image"
         />
 
         <div
@@ -107,14 +111,26 @@
             Professional Web Developer Building Fast, Responsive Websites for
             Small Businesses
           </h1>
-          <h2>I'm Stephanie Edmond</h2>
+          <h2>
+            Websites that help small businesses <br />
+            get clients and build trust
+          </h2>
+          <hr class="hr-name" />
           <p>
             <span
               class="typed"
-              data-typed-items="Software Engineer, Your Web Developer"
+              data-typed-items="Fast & responsive websites,
+        Clean modern designs,
+        Websites built to convert visitors
+        "
             ></span>
           </p>
-          <a href="#problem" class="cta-button">I Need A Site</a>
+          <hr class="hr-name" />
+          <p class="hero-name">Hi, I&#8217;m Stephanie Edmond</p>
+          <div class="btn">
+            <a href="#services" class="cta-button">Build My Website</a>
+            <a href="#portfolio" class="cta-button">View My Work</a>
+          </div>
         </div>
       </section>
       <!-- /Hero Section -->
@@ -126,43 +142,60 @@
         data-aos-duration="1000"
       >
         <div class="container" data-aos="fade-up">
+          <!-- Intro / Hook -->
           <p class="section-problem-intro">
-            Think a website&#8217;s optional? Think again. It&#8217;s the first
-            place people look to see if you&#8217;re legit and it works for you
-            24/7.
-          </p>
-          <h2>
-            Still Don&#8217;t Have a Website? Or <br />
-            Struggling With One That Your Clients Don&#8217;t Trust?
-          </h2>
-          <p class="intro">
-            Running a small business means juggling everything - sales,
-            marketing, customer service, and now… tech? Whether you have a
-            clunky site that drives visitors away or no website at all, you
-            shouldn&#8217;t have to figure it out alone.
-          </p>
-          <p>
-            I build clean, fast websites that are easy to manage and designed to
-            grow your business. From first-timers needing a full setup to those
-            ready to ditch the outdated and confusing, I&#8217;ve got you
-            covered. Your website should work for you not against you. It
-            should:
+            Think a website is optional? Think again. Your website is the first
+            place potential clients check if your business is trustworthy and it
+            works for you 24/7.
           </p>
 
+          <!-- Headline -->
+          <h2>No Website Yet? Or One That Drives Clients Away?</h2>
+
+          <!-- Pain Points -->
+          <p class="intro">
+            Running a small business is busy enough from sales, marketing,
+            customer service, and more. If your website is outdated, confusing,
+            or nonexistent, <b>you're losing trust and revenue every day.</b>
+          </p>
+
+          <!-- Solution Intro -->
+          <p>
+            I help small businesses create <b>fast, modern websites </b> that
+            <b
+              >build trust, attract clients, and convert visitors into paying</b
+            >
+            customers. Whether you need a full setup or a website refresh, your
+            site should work for you not against you. A great website should:
+          </p>
+
+          <!-- Benefits / Outcomes -->
           <ul class="benefits">
-            <li>Load fast</li>
-            <li>Look great on any screen</li>
-            <li>Be simple to use</li>
-            <li>Turn visitors into paying customers</li>
+            <li>
+              <b>Load in under 2 seconds</b> so visitors never leave out of
+              frustration
+            </li>
+            <li>
+              <b>Look stunning on desktop, tablet, and mobile</b> impress every
+              visitor
+            </li>
+            <li><b>Easy to manage</b> update content without tech headaches</li>
+            <li>
+              <b>Turn visitors into paying customers</b> every click counts
+            </li>
           </ul>
 
+          <!-- Closing reassurance -->
           <p class="closing">
-            No tech overwhelm. No confusing jargon. Just a sleek, stress-free
-            site that makes money, builds trust, and run, even while you sleep.
+            No tech overwhelm. No confusing jargon. Just a
+            <b>sleek, stress-free website</b>
+            that builds trust, grows your business, and works even while you
+            sleep.
           </p>
 
-          <a href="#contact" class="cta-button"
-            >Let&#8217;ts Fix Your Site Together</a
+          <!-- CTA -->
+          <a href="#contact" class="cta-button">
+            Start today with a free website review</a
           >
         </div>
       </section>
@@ -193,12 +226,12 @@
                   </div>
 
                   <a href="#" class="stretched-link">
-                    <h3>Custom Website Design & Build</h3>
+                    <h3>Professional Websites That Build Trust</h3>
                   </a>
                   <p>
-                    Perfect if you don&#8217;t have a website yet. I&#8217;ll
-                    create a responsive, fast website built cleanly with tools;
-                    customized to your business needs.
+                    Many small businesses struggle with outdated, confusing
+                    websites. I design and build clean, responsive websites that
+                    impress visitors and establish credibility instantly.
                   </p>
                 </div>
               </article>
@@ -217,12 +250,14 @@
                     <i class="bi bi-arrow-repeat"></i>
                   </div>
                   <a href="#" class="stretched-link">
-                    <h3>Website Makeovers & Redesigns</h3>
+                    <h3>Turn an Outdated Site Into a Sales Tool</h3>
                   </a>
                   <p>
-                    Have an old or clunky site? Let&#8217;s revamp it into
-                    something smoother, faster, fully responsive website that
-                    performs better and looks more up to date.
+                    If your current website is slow, messy, or confusing, it can
+                    scare away clients. I <b>revamp and redesign websites</b> to
+                    be user-friendly, responsive, and optimized for
+                    <b>conversions</b>, turning your site into a lead-generating
+                    machine.
                   </p>
                 </div>
               </article>
@@ -241,11 +276,13 @@
                     <i class="bi bi-bullseye"></i>
                   </div>
                   <a href="#" class="stretched-link">
-                    <h3>Landing Pages That Convert</h3>
+                    <h3>Landing Pages That Convert Visitors</h3>
                   </a>
                   <p>
-                    Fast, clear landing pages built for conversions. Perfect for
-                    promotions, services, or new offers.
+                    Need a high-performing landing page for a product or
+                    promotion? I <b>create landing pages</b> that capture
+                    attention, clearly communicate your offer, and
+                    <b>convert visitors into paying customers</b>.
                   </p>
                 </div>
               </article>
@@ -293,16 +330,12 @@
                   <ul>
                     <li>Working contact forms</li>
                     <li>Newsletter or booking integrations</li>
-                    <li>Easy content updates without code</li>
                   </ul>
                   <a href="#" class="stretched-link"></a>
                 </div>
               </article>
             </div>
 
-            <!--End Service Item -->
-          </div>
-        </div>
       </section>
       <!--/Services Section -->
 
@@ -347,10 +380,24 @@
                   />
                   <div class="portfolio-info">
                     <h4>Bella Cucina Restaurant</h4>
-                    <p>
-                      Modern restaurant site with online menu, reservations, and
-                      mobile-first design.
-                    </p>
+                    <p>Modern restaurant website that builds trust.</p>
+
+                    <div class="case-study-details">
+                      <p>
+                        <strong>Context:</strong> A local restaurant needed an
+                        online presence.<br />
+                        <strong>Problem:</strong> Customers couldn&#8217;t
+                        easily find the menu or contact details.<br />
+                        <strong>Solution:</strong> I built a modern,
+                        mobile-first website with a clear menu and layout.<br />
+                        <strong>Outcome:</strong> The restaurant gained a
+                        professional site that builds trust and improves
+                        customer experience.
+                      </p>
+                    </div>
+                    <button class="toggle-details cta-button">
+                      View Case Study
+                    </button>
                     <a
                       href="assets/img/portfolio/bella-cucina-mockup.webp"
                       title="Bella Cucina"
@@ -381,10 +428,26 @@
                   />
                   <div class="portfolio-info">
                     <h4>Provenly Pro</h4>
-                    <p>
-                      Comprehensive project management tool with real-time
-                      collaboration and analytics landing page.
+                    <p class="teaser">
+                      Project management tool landing page with clear, engaging
+                      UI.
                     </p>
+                    <div class="case-study-details">
+                      <p>
+                        <strong>Context:</strong> A SaaS product launching a
+                        project management tool.<br />
+                        <strong>Problem:</strong> The product features were
+                        unclear to first-time visitors.<br />
+                        <strong>Solution:</strong> I created a focused landing
+                        page explaining the product and guiding users to sign
+                        up.<br />
+                        <strong>Outcome:</strong> Visitors can quickly
+                        understand the product and take action.
+                      </p>
+                    </div>
+                    <button class="toggle-details cta-button">
+                      View Case Study
+                    </button>
                     <a
                       href="assets/img/portfolio/provenly-mockup.webp"
                       title="Provenly Pro"
@@ -415,7 +478,25 @@
                   />
                   <div class="portfolio-info">
                     <h4>Chris Nova</h4>
-                    <p>Artist link in bio</p>
+                    <p class="teaser">
+                      Artist website with link-in-bio layout and mobile-first
+                      design.
+                    </p>
+                    <div class="case-study-details">
+                      <p>
+                        <strong>Context:</strong> An artist needed one place to
+                        share all important links.<br />
+                        <strong>Problem:</strong> Social media profiles limited
+                        how content was shared.<br />
+                        <strong>Solution:</strong> I built a clean,
+                        mobile-friendly link-in-bio website.<br />
+                        <strong>Outcome:</strong> Fans can easily access music,
+                        socials, and updates from one page.
+                      </p>
+                    </div>
+                    <button class="toggle-details cta-button">
+                      View Case Study
+                    </button>
                     <a
                       href="assets/img/portfolio/chris-nova-mockup.webp"
                       title="Chris Nova"
@@ -446,7 +527,25 @@
                   />
                   <div class="portfolio-info">
                     <h4>Heartwell Cardiology</h4>
-                    <p>Cardiology services and patient care website</p>
+                    <p class="teaser">
+                      Cardiology website for patient care, appointments, and
+                      services.
+                    </p>
+                    <div class="case-study-details">
+                      <p>
+                        <strong>Context:</strong> A cardiology practice needed a
+                        professional healthcare website.<br />
+                        <strong>Problem:</strong> Medical services were not
+                        clearly explained to patients.<br />
+                        <strong>Solution:</strong> I built a clean, trustworthy
+                        website focused on clarity and accessibility.<br />
+                        <strong>Outcome:</strong> Patients can easily understand
+                        services and feel confident in the practice.
+                      </p>
+                    </div>
+                    <button class="toggle-details cta-button">
+                      View Case Study
+                    </button>
                     <a
                       href="assets/img/portfolio/heartwell-cardiology-mockup.webp"
                       title="Heartwell Cardiology"
@@ -467,6 +566,8 @@
 
             <!-- End Portfolio Container -->
           </div>
+          <a href="#contact" class="cta-button">Start today with a free website review</a
+          >
         </div>
       </section>
       <!-- /Portfolio Section -->
@@ -477,14 +578,14 @@
         <div class="container section-title" data-aos="fade-up">
           <h2>Process That Make the Web Work for You</h2>
           <p>
-            Your business deserves more than just a pretty site. You need a
-            fast, clear website that delivers results without tech stress.
+            How I work to make your website fast, clear, and conversion-focused
           </p>
         </div>
         <!--End Section Title -->
 
         <div class="container">
           <div class="row gy-4">
+            <!-- Step 1: Discovery -->
             <div
               class="col-lg-4 col-md-6"
               data-aos="fade-up"
@@ -494,25 +595,32 @@
                 <div class="icon">
                   <i class="bi bi-layout-text-window"></i>
                 </div>
-                <a href="#" class="stretched-link">
                   <h3>Discovery</h3>
-                </a>
-                <p>We start with a conversation.</p>
-                <p>
-                  <strong>You: </strong>
-                  <span>Share your goals, User&#8217;ts needs, and ideas.</span>
+                <p class="teaser">
+                  We start with a conversation about your goals.
                 </p>
-                <p>
-                  <strong>Me: </strong>
-                  <span
-                    >Listen carefully, research your industry, and suggest the
-                    best path.</span
-                  >
-                </p>
+                <div class="case-study-details" >
+                  <p>
+                    <strong>You: </strong
+                    ><span
+                      >Share your goals, User&#8217;s needs, and ideas.</span
+                    >
+                  </p>
+                  <p>
+                    <strong>Me: </strong
+                    ><span
+                      >Listen carefully, research your industry, and suggest the
+                      best path.</span
+                    >
+                  </p>
+                </div>
+                <button type="button" class="details cta-button toggle-details">
+                  Details
+                </button>
               </div>
             </div>
-            <!--End Service Item -->
 
+            <!-- Step 2: Planning -->
             <div
               class="col-lg-4 col-md-6"
               data-aos="fade-up"
@@ -522,25 +630,26 @@
                 <div class="icon">
                   <i class="bi bi-arrow-repeat"></i>
                 </div>
-                <a href="#" class="stretched-link">
                   <h3>Planning</h3>
-                </a>
-                <p>We map out the journey.</p>
-                <p>
-                  <strong>You: </strong>
-                  <span>Approve the roadmap and give feedback.</span>
-                </p>
-                <p>
-                  <strong>Me: </strong>
-                  <span
-                    >Create a clear timeline, milestones, and content
-                    structure.</span
-                  >
-                </p>
+                <p class="teaser">We map out the journey.</p>
+                <div class="case-study-details" >
+                  <p>
+                    <strong>You: </strong
+                    ><span>Approve the roadmap and give feedback.</span>
+                  </p>
+                  <p>
+                    <strong>Me: </strong
+                    ><span
+                      >Create a clear timeline, milestones, and content
+                      structure.</span
+                    >
+                  </p>
+                </div>
+                <button class="details cta-button toggle-details">Details</button>
               </div>
             </div>
-            <!--End Service Item -->
 
+            <!-- Step 3: Development -->
             <div
               class="col-lg-4 col-md-6"
               data-aos="fade-up"
@@ -550,25 +659,26 @@
                 <div class="icon">
                   <i class="bi bi-bullseye"></i>
                 </div>
-                <a href="#" class="stretched-link">
                   <h3>Development</h3>
-                </a>
-                <p>Your vision takes shape.</p>
-                <p>
-                  <strong>You: </strong>
-                  <span>Provide content (or we refine it together).</span>
-                </p>
-                <p>
-                  <strong>Me: </strong>
-                  <span
-                    >Build a secure, responsive website tailored to your
-                    business.</span
-                  >
-                </p>
+                <p class="teaser">Your vision takes shape.</p>
+                <div class="case-study-details" >
+                  <p>
+                    <strong>You: </strong
+                    ><span>Provide content (or we refine it together).</span>
+                  </p>
+                  <p>
+                    <strong>Me: </strong
+                    ><span
+                      >Build a secure, responsive website tailored to your
+                      business.</span
+                    >
+                  </p>
+                </div>
+                <button class="details cta-button toggle-details">Details</button>
               </div>
             </div>
-            <!--End Service Item -->
 
+            <!-- Step 4: Launch -->
             <div
               class="col-lg-4 col-md-6"
               data-aos="fade-up"
@@ -578,27 +688,28 @@
                 <div class="icon">
                   <i class="bi bi-tools"></i>
                 </div>
-                <a href="#" class="stretched-link">
-                  <h3>Launch and live</h3>
-                </a>
-                <p>Your site goes live stress-free.</p>
-                <p>
-                  <strong>You: </strong>
-                  <span
-                    >Celebrate and start using your site with your users.</span
-                  >
-                </p>
-                <p>
-                  <strong>Me: </strong>
-                  <span
-                    >Test everything, launch smoothly, and provide support after
-                    go-live.</span
-                  >
-                </p>
-                <a href="#" class="stretched-link"></a>
+                  <h3>Launch and Live</h3>
+                <p class="teaser">Your site goes live stress-free.</p>
+                <div class="case-study-details" >
+                  <p>
+                    <strong>You: </strong
+                    ><span
+                      >Celebrate and start using your site with your
+                      users.</span
+                    >
+                  </p>
+                  <p>
+                    <strong>Me: </strong
+                    ><span
+                      >Test everything, launch smoothly, and provide support
+                      after go-live.</span
+                    >
+                  </p>
+                  
+                </div>
+                <button class="details cta-button toggle-details">Details</button>
               </div>
             </div>
-            <!--End Service Item -->
           </div>
         </div>
       </section>
@@ -653,10 +764,10 @@
                 </p>
 
                 <p>
-                  When I&#8217;m not coding, I&#8217;tm usually reading,
+                  When I&#8217;m not coding, I&#8217;m usually reading,
                   learning something new, dancing to music, or testing out
-                  ideas. Lately, I&#8217;tve also been practicing stepping out
-                  of my introvert bubble whether that&#8217;ts networking or
+                  ideas. Lately, I&#8217;ve also been practicing stepping out
+                  of my introvert bubble whether that&#8217;s networking or
                   just socializing more.
                 </p>
               </div>
@@ -901,7 +1012,6 @@
                   class="form-control"
                   name="subject"
                   placeholder="If you chose Others, please specify here"
-                  required=""
                 />
               </div>
 

@@ -278,10 +278,47 @@
 const serviceType = document.getElementById("service_type");
 const subjectInput = document.querySelector("input[name='subject']");
 
-serviceType.addEventListener("change", () => {
-  if (serviceType.value === "other") {
-    subjectInput.required = true;
-  } else {
+if (serviceType && subjectInput) {
+  serviceType.addEventListener("change", () => {
+    if (serviceType.value === "other") {
+      subjectInput.required = true;
+      subjectInput.style.display = "block";
+    } else {
+      subjectInput.required = false;
+      subjectInput.value = "";
+      subjectInput.style.display = "none";
+    }
+  });
+
+  // Hide subject field on page load unless "Others" is selected
+  if (serviceType.value !== "other") {
+    subjectInput.style.display = "none";
     subjectInput.required = false;
   }
+}
+
+// make my portfolio projects descriptions more detailed
+// providing context, problem, solution, and outcome for each project
+
+document.querySelectorAll(".toggle-details").forEach((button) => {
+  button.addEventListener("click", () => {
+    const details = button.previousElementSibling;
+    const isVisible = details.style.display === "block";
+    details.style.display = isVisible ? "none" : "block";
+    button.textContent = isVisible ? "View Case Study" : "Hide Case Study";
+  });
+});
+
+// <!-- this JS for toggle functionality for process section-->
+document.querySelectorAll(".details").forEach((button) => {
+  button.addEventListener("click", () => {
+    const serviceItem = button.closest(".service-item");
+    const details = serviceItem.querySelector(".case-study-details");
+
+    details.classList.toggle("active");
+
+    button.textContent = details.classList.contains("active")
+      ? "Hide details"
+      : "Details";
+  });
 });
