@@ -1033,8 +1033,20 @@ section,
 }
 .portfolio .cta-button {
   display: flex;
-  margin: 40px auto 0 auto;
+  margin: 1.6rem auto 0 auto;
   width: fit-content;
+}
+
+@media (max-width: 575px) {
+  .case-study-details {
+    max-width: 100%;
+    padding-top: 1rem;
+  }
+
+  .case-study-details p {
+    line-height: 1.7;
+    font-size: 0.95rem;
+  }
 }
 /*--------------------------------------------------------------
 # Faq Section
