@@ -12,9 +12,10 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --default-font:
+    "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Raleway", sans-serif;
   --nav-font: "Poppins", sans-serif;
 }
@@ -712,11 +713,8 @@ section,
   flex-shrink: 0; /* don’t allow flex to shrink it */
   width: 35%; /* length of the line */
   height: 2px; /* thickness */
-  background: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 1)
-    ),
+  background:
+    linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 1)),
     rgba(255, 255, 255, 0.8); /* visible on bright background */
   border: none; /* remove default */
   border-radius: 1px; /* rounded edges */
@@ -1030,8 +1028,8 @@ section,
   bottom: 20px;
 }
 
-.bella-cucina-h-adjust {
-  height: 100%;
+.firstProject-h-adjust {
+  height: 160px;
 }
 .portfolio .cta-button {
   display: flex;
